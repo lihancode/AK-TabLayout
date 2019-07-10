@@ -16,30 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initFragments()
-
+        fragments = ArrayList()
+        fragments.add(MondayFragment())
+        fragments.add(ThursdayFragment())
+        fragments.add(WednesdayFragment())
         mViewPager.adapter = ViewPagerFragmentAdapter(supportFragmentManager,fragments)
         tablayout.setupWithViewPager(mViewPager)
         tablayout.getTabAt(0)?.text = "Monday"
         tablayout.getTabAt(1)?.text = "Thursday"
         tablayout.getTabAt(2)?.text = "Wednesday"
-        
-        tablayout.addOnTabSelectedListener(object : TabLayout.BaseOnTabSelectedListener<TabLayout.Tab>{
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-                Log.d(TAG, "onTabReselected: ${tab?.text}")
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-                Log.d(TAG, "onTabUnselected: ${tab?.text}")
-            }
-
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                Log.d(TAG, "onTabSelected: ${tab?.text}")
-            }
-
-        })
-
-
 
     }
 

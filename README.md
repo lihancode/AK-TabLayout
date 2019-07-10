@@ -64,10 +64,10 @@ class ViewPagerFragmentAdapter(val fm : FragmentManager , val fragments : ArrayL
 
 # Result
 
-<img  src="https://github.com/lihancode/AK-TabLayout/blob/master/Screenshot_1562743949.png"  height =300 width=300 ></img>
+<img  src="https://github.com/lihancode/AK-TabLayout/blob/master/Screenshot_1562743949.png"  height =600 width=300 ></img>
   
   
-<img  src="https://github.com/lihancode/AK-TabLayout/blob/master/tablayout.gif"  height =300 width=300 ></img>
+<img  src="https://github.com/lihancode/AK-TabLayout/blob/master/tablayout.gif"  height =600 width=300 ></img>
 
 
 
